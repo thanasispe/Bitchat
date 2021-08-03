@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+           
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous"
+      />
+      <title>Home</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            
+            <a class="nav-item nav-link" id="home" href="/" href="/">Home</a>
+              
+            <a class="nav-item nav-link" id="home" href="/post-form" href="/post-form">Create Post</a>
+            
+        </nav>
+
+
+        {% for post in posts  %}
+        <div>
+            
+                <h1>{{post.name}}</h1>
+                <p>{{post.data}}</p>
+        </div> 
+        {% endfor %}
+
+    </body>
+</html>
