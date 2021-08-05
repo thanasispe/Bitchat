@@ -28,8 +28,8 @@
         </nav>
 
         <form method="POST" action="/add-post/">{% csrf_token %}
-            <input name="name" type="text" placeholder="Display Name"/>
-            <input name="data" type="text" placeholder="Type something..."/>
+            <p>Display Name: </p><input name="name" type="text" />
+            <p>Type something: </p><input name="data" type="text"/>
             <button type="submit" >Send</button>
           </form>
 
