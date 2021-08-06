@@ -27,7 +27,11 @@ SECRET_KEY = 'django-insecure-@!f!_p*a=vh##e_pywz)2re*$+sng1iof73f$1a^(@ou%w!z9)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ["162.55.161.171","bitchat24.eu"]
+=======
+ALLOWED_HOSTS = ["bitchat24.eu"]
+>>>>>>> 3e01e1a71003f705793c54004f1c4579a763e014
 
 
 # Application definition
